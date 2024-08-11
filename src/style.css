@@ -19,6 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+:root {
+    --shadow: #999;
+    --side-padding: 1.5rem;
+    --card-title-font: 1.75rem;
+}
+
 body {
     min-height: 100vh;
     width: 100vw;
@@ -38,7 +44,7 @@ body {
 
 .top-photo-container {
     
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
     height: auto;
     position: relative;
     background: rgb(8,145,178);    
@@ -49,7 +55,7 @@ body {
 .top-photo > img {
     width: 100%;
     object-fit: cover;
-    box-shadow: 0px 0px 8px #666;
+    box-shadow: 0px 0px 8px var(--shadow);
 }
 
 .name {
@@ -68,7 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 var(--side-padding);
     gap: 1rem;
 }
 
@@ -90,7 +96,73 @@ body {
     gap: 1.5rem;
 }
 
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+    padding: var(--side-padding);
+    width: calc(100vw - 3rem);
+}
+
+.mywork-header {
+    margin: 2rem;
+}
 .icons > svg {
     width: 2rem;
     height: auto;
 }
+
+.card-content {
+    padding: 1rem;
+}
+.project-card {
+    /* display: grid;
+    grid-template-rows: 1.5fr 1fr; */
+    box-shadow: 2px 2px 8px var(--shadow);
+}
+
+.card-icons > svg {
+    width: rem;
+    height: var(--card-title-font);
+}
+
+.card-photo > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-container {
+    width: calc(100vw - 3rem);
+}
+
+.card-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.card-project-name, .github-card {
+    font-size: var(--card-title-font);
+    
+}
+
+.card-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.text-content {
+    padding: .75rem;
+    padding-bottom: 1.5rem;
+}
+
+.project-description {
+    color: #444;
+    font-size: 1.25rem;
+}
+
