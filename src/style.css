@@ -1,3 +1,96 @@
-.test {
-    color: red;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas,details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.top-gradient {
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+
+.top-photo-container {
+    
+    padding: 1.5rem 2rem;
+    height: auto;
+    position: relative;
+    background: rgb(8,145,178);    
+    background: linear-gradient(148deg, rgba(8,145,178,1) 60%, rgba(161, 150, 150, 0.25) 60%, rgba(255,255,255,1) 63%);
+    
+}
+
+.top-photo > img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 8px #666;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0px 0px 10px black;
+    position: absolute;
+    left: calc(.5rem + 32px);
+    bottom: 32px;
+    line-height: 1.2;
+    
+}
+
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.para {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: gray;
+    padding-bottom: .25rem;
+}
+
+.icons {
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons > svg {
+    width: 2rem;
+    height: auto;
 }
