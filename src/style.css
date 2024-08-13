@@ -23,6 +23,7 @@ time, mark, audio, video {
     --shadow: #999;
     --side-padding: 1.5rem;
     --card-title-font: 1.75rem;
+    --main-color: rgb(8,145,178);
 }
 
 body {
@@ -154,6 +155,7 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding: .5rem;
 }
 
 .text-content {
@@ -166,3 +168,75 @@ body {
     font-size: 1.25rem;
 }
 
+
+
+.outro-content {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    color: #fff;
+    padding: 2rem 1.5rem 4rem 1.5rem;
+}
+
+.outro-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-me {
+    text-align: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.outro-photo {
+    width: 100vw;
+    height: auto;
+}
+
+
+.outro-photo > img {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.outro-1 {
+    font-size: 1.75rem;
+    /* line-height: .95; */
+}
+
+.outro-2, .outro-3, .outro-email {
+    font-size: 1.5rem;
+}
+
+.outro-email {
+    display: flex;
+    justify-content: center;
+}
+
+
+.outro-icons {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    
+}
+
+.outro-icons > svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+.outro-icon-text {
+    font-size: 3rem;
+}
